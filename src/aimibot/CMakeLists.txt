@@ -31,7 +31,7 @@ include_directories(${EIGEN3_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 add_executable(aimibot src/main.cpp src/message_callback.cpp src/odometry src/diff_driver)
-ament_target_dependencies(aimibot rclcpp std_msgs mymsgs sensor_msgs geometry_msgs nav_msgs tf2_ros serial tf2  )
+ament_target_dependencies(aimibot rclcpp std_msgs mymsgs sensor_msgs geometry_msgs nav_msgs tf2_ros tf2  )
 
 
 install(TARGETS
