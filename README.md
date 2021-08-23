@@ -4,6 +4,7 @@
 sudo apt-get install ros-foxy-ecl-*
 sudo apt install ros-foxy-nav2-*
 sudo apt install ros-foxy-joint-state-publisher
+sudo apt install ros-foxy-ros1-bridge
 ```
 ## 安装串口功能包
 ```
@@ -19,4 +20,8 @@ make install
 colcon build
 source install/setup.sh
 colcon build
+```
+## ros1通信
+```
+ros2 run ros1_bridge dynamic_bridge
 ```
